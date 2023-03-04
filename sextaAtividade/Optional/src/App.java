@@ -74,8 +74,5 @@ public class App {
         estadoNull.ifPresentOrElse(System.out::println, () -> System.out.println("Valor vazio"));
 
         estadoVazio.ifPresentOrElse(System.out::println, () -> estadoVazio.orElseThrow(IllegalStateException::new));
-        
-
-        
     }
 }
